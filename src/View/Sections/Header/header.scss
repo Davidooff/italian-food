@@ -1,0 +1,23 @@
+header {
+  position: fixed;
+  margin-top: 70px;
+  padding: 0 50px;
+  top: 0;
+  left: 0;
+  width: calc(100% - 100px);
+  ul {
+    display: flex;
+    justify-content: end;
+
+    li {
+      font-family: "Open Sans";
+      font-weight: bold;
+      color: black;
+      mix-blend-mode: difference;
+      margin-left: 60px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
