@@ -1,5 +1,6 @@
 header {
-  position: fixed;
+  position: absolute;
+  z-index: 1;
   margin-top: 70px;
   padding: 0 50px;
   top: 0;
@@ -12,7 +13,7 @@ header {
     li {
       font-family: "Open Sans";
       font-weight: bold;
-      color: black;
+      color: white;
       mix-blend-mode: difference;
       margin-left: 60px;
       &:first-child {

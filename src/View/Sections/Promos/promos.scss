@@ -1,0 +1,30 @@
+.promo-section {
+  padding-top: 50px;
+  .promo-el {
+    display: flex;
+
+    .promo-el-content {
+      display: flex;
+      object-fit: contain;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 50px;
+      h3 {
+        font-size: 60px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 30px;
+        margin: 40px 0 50px 0;
+      }
+    }
+
+    &.promo-el-reverse {
+      flex-direction: row-reverse;
+      .promo-el-content {
+        padding-left: 0px;
+        padding-right: 50px;
+      }
+    }
+  }
+}

@@ -18,6 +18,12 @@
 
 @font-face {
   font-family: "Open Sans";
+  src: url("./OpenSans-ExtraBold.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Open Sans";
   src: url("./OpenSans-Italic.ttf");
   font-weight: normal;
   font-style: italic;

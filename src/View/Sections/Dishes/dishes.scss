@@ -1,0 +1,21 @@
+.dishes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .under-title {
+    text-align: center;
+    color: #2f3135;
+    margin-top: 80px;
+    width: 1000px;
+    font-size: 27px;
+  }
+  .dishes-div {
+    margin-top: 100px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .a-btn-black {
+    margin: 120px 0 50px 0;
+  }
+}
