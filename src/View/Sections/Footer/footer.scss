@@ -1,0 +1,47 @@
+footer {
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1000px;
+  color: #343434;
+  .info {
+    width: 45%;
+    max-width: 500px;
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 23px;
+      margin-top: 40px;
+    }
+    .social-media {
+      margin-top: 25px;
+      img {
+        filter: invert(0.8);
+        margin-left: 15px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .routs {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      font-size: 31px;
+      margin-bottom: 40px;
+    }
+    ul {
+      li {
+        margin-top: 25px;
+        font-size: 24px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
