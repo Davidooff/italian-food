@@ -6,14 +6,36 @@
     text-align: center;
     color: #2f3135;
     margin-top: 80px;
-    width: 1000px;
-    font-size: 27px;
+    max-width: 1000px;
+    font-size: 25px;
+    @media screen and (max-width: 1400px) {
+      font-size: 5vw;
+    }
   }
   .dishes-div {
     margin-top: 100px;
     width: 70%;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1400px) {
+      width: 100%;
+      gap: 30px;
+    }
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      .dishe-el {
+        width: 100%;
+        h3 {
+          font-size: 7vw;
+        }
+        p {
+          font-size: 4vw;
+        }
+      }
+    }
   }
   .a-btn-black {
     margin: 120px 0 50px 0;

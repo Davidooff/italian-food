@@ -4,7 +4,8 @@
   position: relative;
   padding: 240px 50px 280px 50px;
   .email-content {
-    z-index: 1;
+    z-index: 2;
+    position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -17,13 +18,22 @@
     p {
       margin-top: 70px;
       font-size: 30px;
-      width: 890px;
+      max-width: 890px;
+    }
+    @media screen and (max-width: 450px) {
+      h2 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 20px;
+      }
     }
 
     .email-input {
       z-index: 2;
       height: 60px;
-      width: 770px;
+      max-width: 770px;
+      width: 100%;
       margin-top: 80px;
       position: relative;
       input {
@@ -32,10 +42,13 @@
         padding: 0;
         border: none;
         border-radius: 50px;
-        width: calc(100% - 160px - 30px);
         height: 100%;
-        padding-left: 30px;
-        padding-right: 160px;
+        padding-inline: 30px;
+        width: 80%;
+        @media screen and (min-width: 650px) {
+          width: calc(100% - 160px - 30px);
+          padding-right: 160px;
+        }
       }
       button {
         font-family: "Open Sans";
@@ -44,10 +57,17 @@
         background-color: #54524f;
         border: none;
         border-radius: 50px;
-        padding: 0 40px;
-        position: absolute;
-        right: -1px;
-        height: 100%;
+        @media screen and (min-width: 650px) {
+          padding: 0 40px;
+          position: absolute;
+          right: -1px;
+          height: 100%;
+        }
+        @media screen and (max-width: 650px) {
+          margin-top: 50px;
+          height: 50px;
+          width: 200px;
+        }
       }
     }
   }

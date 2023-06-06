@@ -6,17 +6,19 @@
   align-items: center;
   .info-content {
     margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
     max-width: 1050px;
     aside {
-      width: 49%;
       font-size: 20px;
       line-height: 25px;
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: 600px) {
+      display: flex;
+      justify-content: space-between;
     }
   }
   .a-btn-white {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 50px;
   }
 }

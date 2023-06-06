@@ -2,12 +2,15 @@
   background: url("../../../Assets/background.jpg") no-repeat center center
     fixed;
   background-size: cover;
+  position: relative;
   color: white;
   display: flex;
   justify-content: space-between;
   padding-top: 200px;
   padding-right: 50px;
+  min-height: 690px;
   .content {
+    z-index: 2;
     h1 {
       font-family: "Reey";
       font-size: 91px;
@@ -29,18 +32,49 @@
     .under-btn {
       font-size: 20px;
       font-style: italic;
-      width: 490px;
+      max-width: 490px;
       margin-top: 25px;
       letter-spacing: 0.05em;
       line-height: 1.5em;
     }
+    @media screen and (max-width: 720px) {
+      .logo {
+        width: 80px;
+      }
+      h1 {
+        font-size: 55px;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      h1 {
+        font-size: 40px;
+      }
+      .under-title {
+        font-size: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    padding-left: 50px;
   }
   .ilustrations {
     position: relative;
+    width: 50vw;
     .lefe {
       position: absolute;
       bottom: -150px;
       right: 0;
+    }
+    img {
+      width: 100%;
+    }
+    @media screen and (max-width: 1400px) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    @media screen and (max-width: 880px) {
+      display: none;
     }
   }
 }
