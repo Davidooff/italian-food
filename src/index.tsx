@@ -7,11 +7,19 @@ import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Main from "./View/Pages/Main";
+import Header from "./View/Sections/Header";
+import Footer from "./View/Sections/Footer";
+import Menu from "./View/Pages/Menu";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
+    // errorElement: <ErrorPage />,
+  },
+  {
+    path: "/menu",
+    element: <Menu />,
     // errorElement: <ErrorPage />,
   },
 ]);
@@ -21,7 +29,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    <Header />
     <RouterProvider router={router} />
+    <Footer />
   </React.StrictMode>
 );
 

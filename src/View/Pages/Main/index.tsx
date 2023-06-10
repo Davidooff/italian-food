@@ -13,7 +13,7 @@ import "./main.scss";
 function Main() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <MainSection />
       <Dishes />
       <Info />
@@ -21,7 +21,7 @@ function Main() {
       <Pizza />
       <Advantages />
       <Email />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
