@@ -1,0 +1,72 @@
+.dish-pop-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba($color: #fff, $alpha: 0.1);
+  z-index: 99;
+}
+
+.dish {
+  width: 50%;
+  height: 80%;
+  border-radius: 20px;
+  position: relative;
+  background-color: #27292c;
+  padding: 20px;
+  color: white;
+  overflow-y: scroll;
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  img {
+    border-radius: 10px;
+    width: 80%;
+  }
+  h2 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .desc {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 5px;
+  }
+  .price {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+.revies {
+  .review {
+    position: relative;
+    padding: 10px 10px 20px 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+  }
+}
+
+.review_username {
+  font-size: 20px;
+}
+
+.review_desc {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.review_upd {
+  float: right;
+  color: #a1a1a1;
+}
